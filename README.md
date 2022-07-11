@@ -1,10 +1,10 @@
 # Samplerate
 
-[![Build Status](https://travis-ci.org/Prior99/rust-samplerate.svg?branch=master)](https://travis-ci.org/Prior99/rust-samplerate)
-[![Docs](https://docs.rs/samplerate/badge.svg)](https://docs.rs/samplerate/)
+[![Docs](https://docs.rs/samplerate-rs/badge.svg)](https://docs.rs/samplerate-rs/)
 
 A samplerate conversion library for Rust.
-This library provides a high-level API for [libsamplerate-sys](https://github.com/Prior99/libsamplerate-sys) and hence is built on top of [libsamplerate](http://www.mega-nerd.com/SRC/api.html).
+
+This is a fork of the [samplerate](https://github.com/Prior99/rust-samplerate) crate the uses the pure C2Rust transpiled version of [libsamplerate](https://github.com/RamiHg/rust-libsamplerate) in place of the bindings to the [C library](http://www.mega-nerd.com/SRC/api.html). This allows compilation without needing to have CMake installed.
 
 # Example
 
@@ -12,7 +12,7 @@ This library provides a high-level API for [libsamplerate-sys](https://github.co
 extern crate samplerate;
 extern crate hound;
 
-use samplerate::{convert, ConverterType};
+use samplerate_rs::{convert, ConverterType};
 use hound::{WavSpec, WavWriter, SampleFormat};
 
 fn main() {
