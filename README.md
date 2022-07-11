@@ -1,4 +1,4 @@
-# Samplerate
+# Samplerate-rs
 
 [![Docs](https://docs.rs/samplerate-rs/badge.svg)](https://docs.rs/samplerate-rs/)
 
