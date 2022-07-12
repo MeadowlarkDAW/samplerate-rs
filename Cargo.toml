@@ -11,7 +11,8 @@ keywords = ["audio", "samplerate"]
 license = "BSD-2-Clause"
 
 [dependencies]
-libsamplerate = "0.1"
+#libsamplerate = "0.1"
+libsamplerate = { git = "https://github.com/MeadowlarkDAW/rust-libsamplerate.git", branch = "master" }
 
 [dev-dependencies]
 hound = "3.4"
